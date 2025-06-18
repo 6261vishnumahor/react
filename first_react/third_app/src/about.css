@@ -1,0 +1,21 @@
+.div1{
+    background-color: rgb(156, 193, 193);
+   text-align: center;
+    border: 2px solid rgb(198, 181, 181);
+    width: 200px ;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* .img image{
+  border-radius: 50px;
+} */
+.productname{
+    font-size: 23px;
+    font-weight: 700;
+    font-style: oblique;
+}
+.disc{
+font-size: 32px;
+font-weight: bolder;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
