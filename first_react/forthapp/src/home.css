@@ -323,4 +323,63 @@ border-radius: 10px;
     padding: 10px;
     padding-bottom: 30px;
 }
+.sup{
+   
+    width: 250px;
+    text-align: center;
+    
+}
+.sup1{
+    font-size: 48px;
+    
+    
+}
+.sup2{
+    font-size: 28px;
+    font-weight: 600;
+     font-family: "Alumni Sans SC", sans-serif;
+}
+.sup3{
+    font-weight: 600;
+}
+.su1{
+border-bottom: 0.5px solid rgb(231, 216, 216);
+margin: 50px;
+}
+.su{
+    display: flex;
+    justify-content: space-evenly;
+}
+  /* .inpt {
+      text-align: center;
+      margin-top: 100px;
+    } */
+/* .inpt {
+    
+    width: 400px;
+     border: 2px solid #ccc;
+      border-radius: 5px;
+} */
+ /* input{
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
 
+     .sub {
+      margin-top: 10px;
+      font-size: 24px;
+      color: #555;
+      cursor: pointer;
+    }
+
+     .sub:hover {
+      color: #000;
+    } */
+     .sec4{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+     }
