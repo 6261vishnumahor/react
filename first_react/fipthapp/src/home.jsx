@@ -11,7 +11,7 @@ const Home = () => {
         "productName": "Shirt",
         "productPrice":"1500'$",
         "productDiscount": "70% Off",
-        "productImage": <img  width={250} height={300}   src="https://i5.walmartimages.com/asr/253ef255-84c8-415e-bf8c-9f5e1ee47b6d_2.4d46e344c81c23a97340653031a155ce.png?odnWidth=1000&odnHeight=1000&odnBg=ffffff" alt="image not found"></img>
+        "productImage": "https://i5.walmartimages.com/asr/253ef255-84c8-415e-bf8c-9f5e1ee47b6d_2.4d46e344c81c23a97340653031a155ce.png?odnWidth=1000&odnHeight=1000&odnBg=ffffff" 
     }]
     return (
         <>
@@ -31,7 +31,7 @@ const Home = () => {
             {
                 cart.map(b => (
                     <div className="cart">
-                        <div className="img">{b.productImage}</div>
+                        <div className="img"><img src={b.productImage} alt=""></img></div>
                         <div className="name">{b.productName}</div>
                         <div className="price">{b.productPrice}</div>
                         <div className="dis">{b.productDiscount}</div>

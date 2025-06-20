@@ -1,6 +1,6 @@
-/* body{
-    font-family: "Alumni Sans SC", sans-serif;
-} */
+body{
+    overflow-x: hidden;
+}
 
 .div {
     background-color: rgb(182, 206, 206);
@@ -319,3 +319,8 @@ border-radius: 10px;
     grid-template-columns: auto auto auto auto auto auto;
     justify-content: space-evenly;
 }
+.sec3 .shoes{
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
