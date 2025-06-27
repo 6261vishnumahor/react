@@ -9,6 +9,7 @@ import Registration from "./Registretion"
 import Navbar from "./navbar"
 import Login from "./login"
 import Cart from "./add_to_cart"
+import Full_width_banner from "./full width banner.jsx"
 
 const App=()=>{
   return(
@@ -18,6 +19,8 @@ const App=()=>{
     <Routes>
       <Route path="/" element={<Home></Home>}></Route>
       <Route path="/Categories" element={<Categories></Categories>}></Route>
+      <Route path="/Full_width_banner" element={<Full_width_banner></Full_width_banner>}></Route>
+      
       <Route path="/Features" element={<Features></Features>}></Route>
       <Route path="/Product" element={<Product></Product>}></Route>
       <Route path="/Pages" element={<Pages></Pages>}></Route>

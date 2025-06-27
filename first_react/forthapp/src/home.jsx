@@ -9,6 +9,7 @@ import { CiFacebook } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
@@ -54,8 +55,7 @@ const Home = () => {
                     <article className="a1">Find the Boundariese.Push Through</article>
                     <article className="a2">Summer Sale</article>
                     <article className="a3">
-                        <div className="a4">CMT</div>
-                        <b>CLIMB THE<br></br>  MOUNTAIN</b>
+                        <div className="a4"><img src="https://www.portotheme.com/wordpress/porto/shop3/wp-content/uploads/sites/214/2024/01/shop3-soft-intro-brand.png?id=2325" alt="" /></div>
                     </article>
                 </div>
                 <div>
@@ -318,7 +318,7 @@ const Home = () => {
                             <div className="sup1">{e.icon}</div>
                             <div className="sup2">{e.suport}</div>
                             <div className="sup3">{e.suport1}</div>
-                            <div className="sup4">{e.suport2}</div>
+                            <div className="di3">{e.suport2}</div>
                         </div>
                     ))
 
@@ -333,15 +333,22 @@ const Home = () => {
                 </article>
                 <article>
                     <div className="inpt">
-                        <input type="text" placeholder="ENTER EMAIL" />
+                        <input type="text" placeholder="Enter the email" />
                         <div className="sub">SUBSCRIBE</div>
                     </div>
                 </article>
                 <article>
-                    <div>
+                    <div className="icon">
+                       <article>
                         <CiFacebook />
+                        </article>
+                         <article>
                         <FaXTwitter />
+                         
+                        </article>
+                         <article>
                         <FaInstagram />
+                        </article>
                     </div>
                 </article>
             </section>
@@ -349,6 +356,68 @@ const Home = () => {
 
 
             <div className="su1"></div>
+
+
+            <section className="sec5">
+                <article>
+                    <div className="con">CONTACT INFO</div>
+                    <div className="di1">
+                        <div>
+                            <div className="add">
+                                <div className="di2">ADDRESS:</div>
+                                <div className="di3">1234 Street Name, City, England</div>
+                            </div>
+                            <div className="add">
+                                <div className="di2">EMAIL:</div>
+                                <div className="di3">mail@example.com</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className="add">
+                                <div className="di2">PHONE:</div>
+                                <div className="di3">(123) 456-7890</div>
+                            </div>
+                            <div className="add">
+                                <div className="di2">WORKING DAYS/HOURS:</div>
+                                <div className="di3">Mon - Sun / 9:00 AM - 8:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div className="con"> MY ACCOUNT</div>
+                    <div className="myaccount">
+                        <div>
+                            <div className="di3">About us</div>
+                            <div className="di3">Contact us</div>
+                            <div className="di3">My Account</div>
+                        </div>
+                        <div>
+                            <div className="di3">Order History</div>
+                            <div className="di3">Advanced Search</div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div className="con">MAIN FEATURES</div>
+                    <div className="myaccount">
+                    <div>
+                    <div className="di3">Super Fast WordPress Theme</div>
+                    <div className="di3">1st Fully working Ajax Theme</div>
+                    <div className="di3">42 Unique Shop Layouts</div>
+                    </div>
+                    <div>
+                    <div className="di3">Powerful Admin Panel </div>
+                    <div className="di3">Mobile & Retina Optimized</div>
+                    </div>
+                    </div>
+                </article>
+            </section>
+
+
+            <div className="s1"></div>
+
 
 
         </>
