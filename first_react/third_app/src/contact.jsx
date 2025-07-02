@@ -1,6 +1,7 @@
  
  import { Link ,Outlet} from "react-router-dom";
  const Contact=()=>{
+    
     return(
         <>
      <h1>this is contact page</h1>

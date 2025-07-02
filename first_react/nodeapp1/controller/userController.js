@@ -4,4 +4,9 @@ const submited=(req,res)=>{
     usertable.create({name,email,number,password,cpass})
     res.end()
 }
-export {submited}
+
+const fetchdata=async(req,res)=>{
+    const res1=await usertable.find()
+    res.json(res1)
+}
+export {submited,fetchdata}
