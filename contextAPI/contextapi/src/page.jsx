@@ -7,6 +7,7 @@ const MyPage=()=>{
   
     return(
         <>
+        
         <div style={{color:(s%2==0)?"black":"white",background:(s%2==0)?"white":"black" }}>
           {(s%2==0)?<button onClick={v}>dark </button>:<button onClick={v}>light </button>}
           <h1>jkdshjadsioklasodijk</h1>  

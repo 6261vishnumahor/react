@@ -8,6 +8,8 @@ import { MdOutlineLocalShipping } from "react-icons/md"
 import { CiFacebook } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
+import { useContext } from "react";
+import { MyContext } from "./context.jsx";
 
 
 <style>
@@ -15,6 +17,7 @@ import { FaInstagram } from "react-icons/fa6";
 </style>
 
 const Home = () => {
+    const {s, setS, dark}= useContext(MyContext)
     const cart = [{
         "icon": <MdOutlineLocalShipping />,
         "suport": "FREE SHIPPING",
@@ -49,8 +52,8 @@ const Home = () => {
 
     return (
         <>
-
-            <div className="div">
+<section style={{ color: (s % 2 == 0) ? "rgb(88, 88, 90)" : "white", background: (s % 2 == 0) ? "white" : "rgb(87, 87, 89)" }}>
+            <div className="div" >
                 <div className="hero">
                     <article className="a1">Find the Boundariese.Push Through</article>
                     <article className="a2">Summer Sale</article>
@@ -339,15 +342,15 @@ const Home = () => {
                 </article>
                 <article>
                     <div className="icon">
-                       <article>
-                        <CiFacebook />
+                        <article>
+                            <CiFacebook />
                         </article>
-                         <article>
-                        <FaXTwitter />
-                         
+                        <article>
+                            <FaXTwitter />
+
                         </article>
-                         <article>
-                        <FaInstagram />
+                        <article>
+                            <FaInstagram />
                         </article>
                     </div>
                 </article>
@@ -402,15 +405,15 @@ const Home = () => {
                 <article>
                     <div className="con">MAIN FEATURES</div>
                     <div className="myaccount">
-                    <div>
-                    <div className="di3">Super Fast WordPress Theme</div>
-                    <div className="di3">1st Fully working Ajax Theme</div>
-                    <div className="di3">42 Unique Shop Layouts</div>
-                    </div>
-                    <div>
-                    <div className="di3">Powerful Admin Panel </div>
-                    <div className="di3">Mobile & Retina Optimized</div>
-                    </div>
+                        <div>
+                            <div className="di3">Super Fast WordPress Theme</div>
+                            <div className="di3">1st Fully working Ajax Theme</div>
+                            <div className="di3">42 Unique Shop Layouts</div>
+                        </div>
+                        <div>
+                            <div className="di3">Powerful Admin Panel </div>
+                            <div className="di3">Mobile & Retina Optimized</div>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -419,7 +422,7 @@ const Home = () => {
             <div className="s1"></div>
 
 
-
+            </section>
         </>
     )
 }

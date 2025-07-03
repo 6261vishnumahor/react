@@ -1,6 +1,11 @@
  import { useState } from "react"
  import axios from "axios"
+ import { useContext } from "react";
+import { MyContext } from "./context.jsx";
+
+
  const Registration=()=>{
+     const {s, setS, dark}= useContext(MyContext)
 const [ nm,satName]=useState("")
 const [ em,satEmail]=useState("")
 const [num,satNumber]=useState("")
@@ -28,7 +33,8 @@ console.log(obj)
 
     return(
         <>
-        <form action=" ">
+        <div>
+        <form action=" "style={{ color: (s % 2 == 0) ? "rgb(88, 88, 90)" : "white", background: (s % 2 == 0) ? "white" : "rgb(87, 87, 89)" }}>
             <input type="text" value={nm} onChange={(e)=>{satName(e.target.value)}} placeholder="Enter the name" />
             <input type="text" value={em} onChange={(e)=>{satEmail(e.target.value)}} placeholder="Enter the email" />
             <input type="text" value={num} onChange={(e)=>{satNumber(e.target.value)}} placeholder="Enter the number" />
@@ -36,6 +42,7 @@ console.log(obj)
             <input type="text" value={cpass} onChange={(e)=>{satCpass(e.target.value)}} placeholder="Enter the cpass" />
             <button onClick={sub}>submit</button>
         </form>
+        </div>
         </>
     )
 }

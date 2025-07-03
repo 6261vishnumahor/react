@@ -4,19 +4,26 @@ import { CiHeart } from "react-icons/ci";
 import { IoIosSearch } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
 import { CiShoppingCart } from "react-icons/ci";
-import { useRef, useState } from "react";
+import {  useRef, useState } from "react";
+import { CiDark } from "react-icons/ci";
+import { CiLight } from "react-icons/ci";
+import { useContext } from "react";
+import { MyContext } from "./context.jsx";
 
 
 const Navbar = () => {
+     const {s, setS, dark}= useContext(MyContext)
     const v=useNavigate()
+   
     const [c1, setC1] = useState("none")
     const [c2, setC2] = useState("none")
+    
     const ref = useRef();
 
     const r = () => {
         setC1("flex")
     }
-    const s = () => {
+    const d = () => {
         setC1("none")
     }
     const e = () => {
@@ -30,11 +37,12 @@ const Navbar = () => {
     const h = () => {
         ref.current.style.color = ' rgb(29, 29, 29)'
     }
-
+   
 
     return (
         <>
-            <section className="sec1">
+       
+            <section className="sec1"style={{ color: (s % 2 == 0) ? "rgb(88, 88, 90)" : "white", background: (s % 2 == 0) ? "white" : "rgb(87, 87, 89)" }} >
                 <div className="div1" onMouseLeave={f}>
                     <Link className="l1" to="/">home</Link>
                 <div onMouseLeave={f}>
@@ -53,7 +61,7 @@ const Navbar = () => {
                     <Link className="l2" to="USD"> USD</Link>
                     <Link className="l2" to="ELG"> ELG</Link>
                     <Link className="l2" to="More"> More</Link>
-
+                    {(s%2==0)?<button onClick={dark}><CiDark /></button>:<button onClick={dark}><CiLight /></button>}
                     <Link className="l3"> <IoIosSearch /></Link>
                     <Link className="l3"><CiHeart /></Link>
                     <Link className="l3" to="Login"> <FaRegUser /></Link>
@@ -63,7 +71,7 @@ const Navbar = () => {
                 </div>
             </section>
 
-            <div className="categories1" onMouseEnter={r} onMouseLeave={s} style={{ display: c1 }}>
+            <div className="categories1" onMouseEnter={r} onMouseLeave={d} style={{ display: c1 }}>
                 <article className="g"  >
                     <div id="var1">VARIATIONS 1</div>
                     <div>
@@ -157,4 +165,4 @@ const Navbar = () => {
         </>
     )
 }
-export default Navbar; 
+export default Navbar 

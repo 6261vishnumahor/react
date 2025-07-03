@@ -10,11 +10,14 @@ import Navbar from "./navbar"
 import Login from "./login"
 import Cart from "./add_to_cart"
 import Full_width_banner from "./full width banner.jsx"
+// import { useContext } from "react"
+// import { MyContext } from "./context.jsx"
 
 const App=()=>{
+  
   return(
     <>
-    <BrowserRouter>
+    <BrowserRouter >
     <Navbar></Navbar>
     <Routes>
       <Route path="/" element={<Home></Home>}></Route>
