@@ -5,16 +5,18 @@ import { RiCustomerServiceLine } from "react-icons/ri";
 import { PiContactlessPaymentThin } from "react-icons/pi";
 import { GiReturnArrow } from "react-icons/gi";
 import { MdOutlineLocalShipping } from "react-icons/md"
-import { CiFacebook } from "react-icons/ci";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
+// import { CiFacebook } from "react-icons/ci";
+// import { FaXTwitter } from "react-icons/fa6";
+// import { FaInstagram } from "react-icons/fa6";
 import { useContext } from "react";
 import { MyContext } from "./context.jsx";
+import { Link } from "react-router-dom";
+import "./nextfiles/shopNow.jsx"
 
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
+// <style>
+//     @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap');
+// </style>
 
 const Home = () => {
     const {s, setS, dark}= useContext(MyContext)
@@ -69,7 +71,7 @@ const Home = () => {
                     <div className="d2">
                         <article className="d3">STARTING AT</article>
                         <article className="d4">$199</article>
-                        <button>SHOP NOW!</button>
+                        <Link to="shopNow"><button>SHOP NOW!</button>"</Link>
                     </div>
                 </div>
             </div>
@@ -328,7 +330,7 @@ const Home = () => {
                 }
             </div>
 
-            <div className="su1"></div>
+             {/* <div className="su1"></div>
             <section className="sec4">
                 <article>
                     <div>SUBSCRIBE NEWSLETTER</div>
@@ -419,10 +421,10 @@ const Home = () => {
             </section>
 
 
-            <div className="s1"></div>
+            <div className="s1"></div> */}
 
 
-            </section>
+            </section> 
         </>
     )
 }
