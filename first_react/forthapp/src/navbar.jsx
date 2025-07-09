@@ -17,6 +17,7 @@ const Navbar = () => {
 
     const [c1, setC1] = useState("none")
     const [c2, setC2] = useState("none")
+    const [c3, setC3] = useState("none")
 
     const ref = useRef();
 
@@ -32,7 +33,12 @@ const Navbar = () => {
     const f = () => {
         setC2("none")
     }
-
+const a=()=>{
+    setC3("flex")
+}
+const a1=()=>{
+    setC3("none")
+}
 
     const h = () => {
         ref.current.style.color = ' rgb(29, 29, 29)'
@@ -50,7 +56,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="l1" onMouseEnter={e} >features</div>
-                    <div className="l1" to="/Product">product</div>
+                    <div className="l1" to="/Product" onMouseEnter={a}>product</div>
                     {/* <Link className="l1" to="/Pages" >pages</Link> */}
                     {/* <Link className="l1" to="/Element" >Element</Link> */}
                 </div>
@@ -162,7 +168,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <section className="product">
+            <section className="product" onMouseEnter={a} onMouseLeave={a1} style={{display:c3}}>
                 <article className="product1">
                     <div>
                         <Link className="var4" to="Product Pages">Product Pages</Link>

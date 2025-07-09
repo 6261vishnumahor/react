@@ -98,10 +98,17 @@
     display: flex;
   justify-content: space-evenly;
   width: 700px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(244, 241, 238);
+}
+.product1 div{
+margin-bottom: 10px;
 }
 .product1 .var4{
     text-decoration: none;
     color: rgb(124, 119, 119);
+    
 }
 .product2 img{
     position: absolute;
