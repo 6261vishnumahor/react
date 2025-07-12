@@ -5,6 +5,7 @@
 
 #v{
     border-bottom: 0.5px solid rgb(231, 216, 216);
+    
 }
 #v2{
     border-bottom: 1px solid rgb(231, 216, 216);
@@ -12,20 +13,25 @@
 }
 .v4{
     width: 300px;
-    background-color: rgb(179, 187, 187);
+    background-color: rgb(250, 252, 252);
+    float: left;
 }
 .v4 ul .v3 a{
     text-decoration: none;
+    font-family: "Alumni Sans SC", sans-serif;
     
 }
 .v8  li{
     list-style-type: none;
     margin-top: 13px;
+    font-size: 18px;
 }
 .v5{
     display: flex;
     justify-content: space-between;
     margin: 0px 20px 0px 40px;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-size: 18px;
 }
 .v5 a{
     text-decoration: none;
@@ -40,10 +46,11 @@
     display: flex;
     justify-content: space-between;
     margin: 10px 5px 10px 40px;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-size: 18px;
 }
 .v7 button{
     font-size: 8;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
     padding: 5px 10px 5px 10px ;
     color: white;
@@ -58,6 +65,61 @@ color: rgb(143, 131, 131);
  /* .v9 li{
     list-style-type: none;
  } */
- #v10::before {
-   list-style-type:none ;
+ .v10{
+    display: flex;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+ }
+ .v11 {
+     margin-right: 10px;
+     color: rgb(104, 148, 162);
+ }
+ .v12 {
+     margin-right: 10px;
+     color: rgb(1, 7, 9);
+ }
+ .v13 {
+     margin-right: 10px;
+     color: rgb(41, 133, 39);
+ }
+ .v14 {
+     margin-right: 10px;
+     color: rgb(194, 27, 41);
+ }
+ .v15 {
+     margin-right: 10px;
+     color: rgb(94, 26, 143);
+ }
+ .v16 {
+     margin-right: 10px;
+     color: rgb(5, 7, 132);
+ }
+ .v9 ul li:hover{
+border-radius: 50%;
+color: aquamarine;
+ }
+ .v17{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Alumni Sans SC", sans-serif;
+    margin: 10px 10px 10px 10px;
+ }
+ 
+ .v18 {
+     border: 1px solid rgb(91, 89, 89);
+     padding: 5px 13px 5px 13px;
+     margin-bottom: 10px;
+     
+ }
+ .v18:hover{
+    background-color: black;
+    color: white;
+ }
+ .v19{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-size: 18px;
  }
