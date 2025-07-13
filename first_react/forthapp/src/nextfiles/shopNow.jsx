@@ -4,6 +4,7 @@ import { VscDash } from "react-icons/vsc";
 import "./shopnow.css"
 import { CheckBox, useState } from "react";
 import { FaDotCircle } from "react-icons/fa";
+import { AiOutlineUnorderedList } from "react-icons/ai"
 const Shopnow = () => {
     const [v, setV] = useState(0)
     const [s, setS] = useState(0)
@@ -120,9 +121,24 @@ const Shopnow = () => {
             </section >
             
 
-            <section className="a">
-                <img  width="1000px"src="https://www.portotheme.com/wordpress/porto/shop3/wp-content/uploads/sites/214/2019/12/shop3_shop_banner.jpg?id=1937" alt="" />
+            <section className="b">
+                <img src="https://www.portotheme.com/wordpress/porto/shop3/wp-content/uploads/sites/214/2019/12/shop3_shop_banner.jpg?id=1937" alt="" />
+                <div className="b1">Winter Fashion Trends</div>
+                <div className="b2">UP TO 30% OFF ON JECKETS</div>
+                <div className="b3">
+                <div className="b5">STARTING At</div>
+                <div className="b4">$199<sup>99</sup></div>
+                <div><button className="b6">SHOP NOW</button></div>
+                </div>
             </section>
+            <article>
+                <div>SORT BY:</div>
+                <div></div>
+                <div>SHOW:</div>
+                <div>
+<AiOutlineUnorderedList/>
+                </div>
+            </article>
         </>
     )
 }

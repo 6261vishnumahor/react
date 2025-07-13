@@ -3,123 +3,200 @@
     width: 0px;
 } */
 
-#v{
+#v {
     border-bottom: 0.5px solid rgb(231, 216, 216);
-    
+
 }
-#v2{
+
+#v2 {
     border-bottom: 1px solid rgb(231, 216, 216);
     margin-bottom: 20px;
 }
-.v4{
-    width: 300px;
+
+.v4 {
+    width: 310px;
     background-color: rgb(250, 252, 252);
     float: left;
 }
-.v4 ul .v3 a{
+
+.v4 ul .v3 a {
     text-decoration: none;
     font-family: "Alumni Sans SC", sans-serif;
-    
+
 }
-.v8  li{
+
+.v8 li {
     list-style-type: none;
     margin-top: 13px;
     font-size: 18px;
 }
-.v5{
+
+.v5 {
     display: flex;
     justify-content: space-between;
-    margin: 0px 20px 0px 40px;
+    margin: 15px 20px 0px 40px;
     font-family: "Alumni Sans SC", sans-serif;
     font-size: 18px;
 }
-.v5 a{
+
+.v5 a {
     text-decoration: none;
-    color: rgb(245, 249, 249);
+    color: rgb(79, 80, 80);
 }
-.v6 input{
-    width:240px;
+
+.v6 input {
+    width: 240px;
     height: 2px;
     margin: 5px 0px 10px 40px;
 }
-.v7{
+
+.v7 {
     display: flex;
     justify-content: space-between;
     margin: 10px 5px 10px 40px;
     font-family: "Alumni Sans SC", sans-serif;
     font-size: 18px;
 }
-.v7 button{
+
+.v7 button {
     font-size: 8;
     background-color: black;
-    padding: 5px 10px 5px 10px ;
+    padding: 5px 10px 5px 10px;
     color: white;
 }
-.v7:hover{
-color: rgb(143, 131, 131);
+
+.v7:hover {
+    color: rgb(143, 131, 131);
 }
+
 .v7 button:hover {
     background-color: antiquewhite;
     color: black;
- }
- /* .v9 li{
+}
+
+/* .v9 li{
     list-style-type: none;
  } */
- .v10{
+.v10 {
     display: flex;
     font-family: "Alumni Sans SC", sans-serif;
     font-weight: 600;
     font-size: 18px;
- }
- .v11 {
-     margin-right: 10px;
-     color: rgb(104, 148, 162);
- }
- .v12 {
-     margin-right: 10px;
-     color: rgb(1, 7, 9);
- }
- .v13 {
-     margin-right: 10px;
-     color: rgb(41, 133, 39);
- }
- .v14 {
-     margin-right: 10px;
-     color: rgb(194, 27, 41);
- }
- .v15 {
-     margin-right: 10px;
-     color: rgb(94, 26, 143);
- }
- .v16 {
-     margin-right: 10px;
-     color: rgb(5, 7, 132);
- }
- .v9 ul li:hover{
-border-radius: 50%;
-color: aquamarine;
- }
- .v17{
+}
+
+.v11 {
+    margin-right: 10px;
+    color: rgb(104, 148, 162);
+}
+
+.v12 {
+    margin-right: 10px;
+    color: rgb(1, 7, 9);
+}
+
+.v13 {
+    margin-right: 10px;
+    color: rgb(41, 133, 39);
+}
+
+.v14 {
+    margin-right: 10px;
+    color: rgb(194, 27, 41);
+}
+
+.v15 {
+    margin-right: 10px;
+    color: rgb(94, 26, 143);
+}
+
+.v16 {
+    margin-right: 10px;
+    color: rgb(5, 7, 132);
+}
+
+.v9 ul li:hover {
+    border-radius: 50%;
+    color: aquamarine;
+}
+
+.v17 {
     display: flex;
     justify-content: space-evenly;
     font-family: "Alumni Sans SC", sans-serif;
     margin: 10px 10px 10px 10px;
- }
- 
- .v18 {
-     border: 1px solid rgb(91, 89, 89);
-     padding: 5px 13px 5px 13px;
-     margin-bottom: 10px;
-     
- }
- .v18:hover{
+}
+
+.v18 {
+    border: 1px solid rgb(91, 89, 89);
+    padding: 5px 13px 5px 13px;
+    margin-bottom: 10px;
+
+}
+
+.v18:hover {
     background-color: black;
     color: white;
- }
- .v19{
+}
+
+.v19 {
     display: flex;
     justify-content: space-between;
     margin: 20px;
     font-family: "Alumni Sans SC", sans-serif;
     font-size: 18px;
- }
+}
+
+.b img {
+    margin-top: 20px;
+    width: 1180px;
+    height: 310px;
+    position: absolute;
+    z-index: -1;
+}
+
+.b1 {
+    padding: 70px 0px 0px 379px;
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 0.75;
+    font-size: 3.2em;
+    color: #777777;
+}
+.b2{
+    font-weight: 600;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-size:50px;
+    padding: 5px 0px 0px 379px;
+}
+.b3{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Alumni Sans SC", sans-serif;
+    padding: 5px 0px 0px 70px;
+    align-items: center;
+}
+.b3 div{
+    margin: 18px;
+
+}
+.b4{
+   font-size: 30px;
+    background-color: rgb(143, 137, 137);
+    padding: 5px;
+    border-radius: 20px 0px 20px 0px ;
+}
+.b5{
+    font-size: 22px;
+    font-weight: bold;
+        /* font-family: "Alumni Sans SC", sans-serif; */
+    
+       
+}
+.b6{
+    padding: 18px 40px 18px 40px;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px  rgb(133, 127, 127);
+}
