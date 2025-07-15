@@ -17,6 +17,8 @@
     width: 310px;
     background-color: rgb(250, 252, 252);
     float: left;
+    /* position: relative; */
+
 }
 
 .v4 ul .v3 a {
@@ -148,7 +150,7 @@
 
 .b img {
     margin-top: 20px;
-    width: 1180px;
+    width: 1187px;
     height: 310px;
     position: absolute;
     z-index: -1;
@@ -163,13 +165,15 @@
     font-size: 3.2em;
     color: #777777;
 }
-.b2{
+
+.b2 {
     font-weight: 600;
     font-family: "Alumni Sans SC", sans-serif;
-    font-size:50px;
+    font-size: 50px;
     padding: 5px 0px 0px 379px;
 }
-.b3{
+
+.b3 {
     display: flex;
     font-size: 16px;
     font-weight: 500;
@@ -177,26 +181,87 @@
     padding: 5px 0px 0px 70px;
     align-items: center;
 }
-.b3 div{
+
+.b3 div {
     margin: 18px;
 
 }
-.b4{
-   font-size: 30px;
+
+.b4 {
+    font-size: 30px;
     background-color: rgb(143, 137, 137);
     padding: 5px;
-    border-radius: 20px 0px 20px 0px ;
+    border-radius: 20px 0px 20px 0px;
 }
-.b5{
+
+.b5 {
     font-size: 22px;
     font-weight: bold;
-        /* font-family: "Alumni Sans SC", sans-serif; */
-    
-       
+    /* font-family: "Alumni Sans SC", sans-serif; */
+
+
 }
-.b6{
+
+.b6 {
     padding: 18px 40px 18px 40px;
     background-color: black;
     color: white;
-    box-shadow: 3px 3px  rgb(133, 127, 127);
+    box-shadow: 3px 3px rgb(133, 127, 127);
+}
+
+.b7 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    background-color: #e8e5e5;
+    padding: 10px;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.b7 form select {
+    padding: 6px;
+}
+
+.b8 {
+    display: flex;
+    align-items: center;
+}
+
+.b9 {
+    display: flex;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.b9 div {
+    margin-left: 10px;
+}
+
+.b12 img {
+    width: 270px;
+    border-radius: 10px;
+}
+
+.b10 {
+   
+    margin-top: 20px;
+    font-family: "Alumni Sans SC", sans-serif;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+  
+}
+.b11{
+width: 270px;
+    text-align: center;
+    /* margin-left: 310px; */
+    margin-bottom: 20px;
+}
+
+.b14{
+    font-weight: 600;
+    font-size: 22px;
 }
