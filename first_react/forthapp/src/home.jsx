@@ -14,11 +14,10 @@ import { Link } from "react-router-dom";
 import "./nextfiles/shopNow.jsx"
 
 
-// <style>
-//     @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap');
-// </style>
+
 
 const Home = () => {
+    
     const {s, setS, dark}= useContext(MyContext)
     const cart = [{
         "icon": <MdOutlineLocalShipping />,

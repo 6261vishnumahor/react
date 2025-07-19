@@ -71,7 +71,7 @@ const a1=()=>{
                     <Link className="l3"> <IoIosSearch /></Link>
                     <Link className="l3"><CiHeart /></Link>
                     <Link className="l3" to="Login"> <FaRegUser /></Link>
-                    <Link className="l2" to="Registration"> REG</Link>
+                    {/* <Link className="l2" to="Registration"> REG</Link> */}
                     <Link className="l3" to="Cart"> <CiShoppingCart /></Link>
 
                 </div>
