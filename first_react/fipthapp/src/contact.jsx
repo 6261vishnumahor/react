@@ -24,6 +24,9 @@ const b=()=>{
         {/* {(set)?"vinit":"vishnu"} */}
         <button onClick={b}>click</button>
         <marquee behavior="" direction=""></marquee>
+      {/* {
+        card[0].productImage
+      } */}
         </>
     )
 }

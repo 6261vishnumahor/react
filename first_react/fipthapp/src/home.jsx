@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
 import "./style.css"
-import { run ,cart} from "./userSlice"
+import { run, cart } from "./userSlice"
 import { useNavigate } from "react-router-dom"
 
 const Home = () => {
@@ -12,28 +12,28 @@ const Home = () => {
 
     const ca = [{
         "productName": "Shirt",
-        "productPrice":"1500'$",
-        "productDiscount": "70% Off",
-        "productImage": "https://i5.walmartimages.com/asr/253ef255-84c8-415e-bf8c-9f5e1ee47b6d_2.4d46e344c81c23a97340653031a155ce.png?odnWidth=1000&odnHeight=1000&odnBg=ffffff" 
+        "productPrice": "1500'$",
+        "productDiscount": "70% Off ",
+        "productImage": "https://i5.walmartimages.com/asr/253ef255-84c8-415e-bf8c-9f5e1ee47b6d_2.4d46e344c81c23a97340653031a155ce.png?odnWidth=1000&odnHeight=1000&odnBg=ffffff"
     }]
 
-    const val = useSelector(e=>e.user.val)
-    const st = useSelector(e=>e.user.store)
+    const val = useSelector(e => e.user.val)
+    const st = useSelector(e => e.user.store)
     const dis = useDispatch()
-    const nav=useNavigate()
+    const nav = useNavigate()
 
-    const f =()=>{
+    const f = () => {
         dis(run())
     }
-    const s=(b)=>{
+    const s = (b) => {
         console.log(b)
-dis(cart(b))
-nav('/about')
+        dis(cart(b))
+        nav('/about')
     }
     return (
         <>
-        {val}{st}
-        <button onClick={f}> click </button>
+            {val}{st}
+            <button onClick={f}> click </button>
             {
                 arr.map(e => (
                     <div>{e}</div>

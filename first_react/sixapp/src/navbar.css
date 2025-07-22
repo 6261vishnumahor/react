@@ -1,0 +1,17 @@
+.ar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(161, 191, 181);
+    color: rgb(249, 250, 251);
+}
+.div{
+display: flex;
+
+}
+.ar Link{
+    text-decoration: none;
+}
+.div div{
+    padding-right: 20px;
+    text-decoration: none;
+}
