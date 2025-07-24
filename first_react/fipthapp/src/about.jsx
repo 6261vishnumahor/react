@@ -21,7 +21,8 @@ const About = () => {
             <div ><img onMouseEnter={c} onMouseLeave={c1} ref={ref} src="https://th.bing.com/th/id/OIF.QL0bZT8zwyl3Riv7CFHOzA?w=172&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" /></div>
             <div onMouseEnter={b} ref={ref1}>I AM FROM MORENA, IT IS BAGHI GAD</div> */}
             {
-                card[0].productName
+                card[0].productPrice
+              
                
             }
         </>

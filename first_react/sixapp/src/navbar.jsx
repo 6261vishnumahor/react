@@ -9,7 +9,7 @@ const navbar=()=>{
        <div><Link to="/about">about</Link></div>
        <div><Link to="/contact">contact</Link></div>
        </div>
-       <div><Link to="/add_to_cart">addcart</Link></div>
+       <div><Link to="/addtocart">addcart</Link></div>
        </article>
         </>
     )

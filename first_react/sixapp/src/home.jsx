@@ -1,12 +1,15 @@
 import { useDispatch, useSelector } from "react-redux"
 import{cart} from "./userSlice"
 import "./home.css"
+import { useNavigate } from "react-router-dom"
 
 
 const Home=()=>{
-    const val=useSelector(e=>e.user.store)
+    let count = useSelector(state=>state.user.count)
     const dis =useDispatch()
+    const nav=useNavigate()
     const ca = [{
+        "id":1,
         "productName": "Shiv ji",
         "productPrice": "1500'$",
         "productDiscount": "70% Off ",
@@ -15,13 +18,15 @@ const Home=()=>{
     const t=(h)=>{
         console.log(h)
         dis(cart(h))
+        nav("/addtocart")
     }
     return(
         <>
         this is home pages
+        {count}
           {
                 ca.map(b => (
-                    <div onClick={()=>{t(h)}}className="cart">
+                    <div key={b.id} onClick={()=>{t(b)}}className="cart">
                         <div className="img"><img src={b.productImage} alt=""></img></div>
                         <div className="name">{b.productName}</div>
                         <div className="price">{b.productPrice}</div>

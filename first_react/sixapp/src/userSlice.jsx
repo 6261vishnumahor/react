@@ -2,9 +2,10 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const userSlice = createSlice({
     name: "user",
-    InitialState: {
+    initialState: {
         // "arr": [0],
-        "card": []
+        "card": [],
+        "count":0,
     },
     reducers: {
         // v: (s) => {
@@ -12,7 +13,8 @@ const userSlice = createSlice({
         // },
         cart: (h, action) => {
             console.log(action.payload)
-            h.card.push(action.payload)
+            h.card[0] = action.payload
+            h.count = h.card.length
         }
 
     }
