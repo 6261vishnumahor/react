@@ -17,6 +17,9 @@ const Addcart=()=>{
                         <div className="name">{b.productName}</div>
                         <div className="price">{b.productPrice}</div>
                         <div className="dis">{b.productDiscount}</div>
+                         <div className="dis">{b.productdetails}</div>
+                        <div className="dis">{b.productCategory}</div>
+                        <div className="dis">{b.productRatting}</div>
                     </div>
                 ))
             }

@@ -1,0 +1,29 @@
+.img2 img{
+    width: 600px;
+}
+.ar1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.detail{
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    background-color: rgb(203, 222, 222);
+}
+.name1{
+    font-size: 30px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+.price1{
+    font-size: 30px;
+font-weight: 400;
+}
+.dis1{
+    font-size: 35px;
+    color: rgb(186, 180, 172)
+}
+

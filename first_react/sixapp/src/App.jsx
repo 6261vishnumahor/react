@@ -5,6 +5,7 @@ import Contact from "./contact.jsx"
 import Addcart from "./addtocart.jsx"
 
 import Navbar from "./navbar.jsx"
+import ProductInfo from "./productshop.jsx"
 
 const App=()=>{
   
@@ -17,6 +18,7 @@ const App=()=>{
        <Route path="/" element={<Home></Home>}></Route>
        <Route path="/about" element={<About></About>}></Route>
        <Route path="/contact" element={<Contact></Contact>}></Route>
+       <Route path="/productshop" element={<ProductInfo></ProductInfo>}></Route>
        <Route path="/addtocart" element={<Addcart></Addcart>}></Route>
     </Routes>
     
